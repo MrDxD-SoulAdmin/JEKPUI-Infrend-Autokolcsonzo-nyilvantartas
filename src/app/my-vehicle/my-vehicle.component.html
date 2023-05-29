@@ -1,0 +1,50 @@
+<form class="box" name="Main" [formGroup]="BackForm">
+    <h2>kérem adja meg bérelni kívánt jármű rendszámát és km állását:</h2>
+
+    <table>
+        <th>
+            <tr><input type="text" formControlName="Shearch_Data" placeholder="Rendszám"  class="search form-control"></tr>
+        </th>
+        <th>
+            <tr><input type="text" formControlName="Shearch_Data_km" placeholder="KM óra állása" class="search form-control"></tr>
+        </th>
+        <th>
+            <tr>
+                Sérült? <input type="checkbox" formControlName="Shearch_Data_damaged">
+            </tr>
+        </th>
+        <th>
+            <tr><button type="submit" (click)="Back()" class="btn btn-outline-primary">Visszahozás</button></tr>
+        </th>
+    </table>
+
+
+</form>
+<table class="table" class="col-12 mb-1">
+    <thead class="fejlectabla">
+        <th>Sorszám</th>
+        <th>Típus</th>
+        <th>Gyártó</th>
+        <th>Rendszám</th>
+        <th>Alvázszám</th>
+        <th>Beszerzés Dátuma</th>
+        <th>Futott Kilométer</th>
+        <th>Kölcsönzési Díj(NAP)</th>
+        <th>Kölcsönzési Státusz</th>
+        <th>Selejt</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let asdvehicle of mygarage">
+            <th>{{asdvehicle.Vehicle_ID}}</th>
+            <th>{{asdvehicle.Tipus}}</th>
+            <th>{{asdvehicle.Gyarto}}</th>
+            <th>{{asdvehicle.Rendszam}}</th>
+            <th>{{asdvehicle.AlvazSzam}}</th>
+            <th>{{asdvehicle.Beszerzes}}</th>
+            <th>{{asdvehicle.Futott}}</th>
+            <th>{{asdvehicle.Kolcsonzse_Dij}}</th>
+            <th>{{asdvehicle.status}}</th>
+            <th *ngIf="asdvehicle.Selejt">{{asdvehicle.Selejt}}</th>
+        </tr>
+    </tbody>
+</table>

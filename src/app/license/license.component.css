@@ -1,0 +1,13 @@
+.search{
+    width: 200px;
+}
+h1{
+    color: #f9a71f;
+}
+button,Select,input{
+    border: 2px solid #cf3c28;
+    margin-left: 5px;
+}
+#fejtabla{
+    margin-bottom: 10px;
+}

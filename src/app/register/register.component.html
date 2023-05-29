@@ -1,0 +1,34 @@
+<div class="row justify-content-md-center">
+    <div class="col-md-6">
+        <form [formGroup]="RegisterForm">
+            <div class="mb-3">
+                <label for="email" class="form-label">Név</label>
+                <input type="email" class="form-control" id="Név" formControlName="Nev">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Telefonszám</label>
+                <input type="email" class="form-control" id="email" formControlName="Telefonszam">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Cím</label>
+                <input type="email" class="form-control" id="email" formControlName="Address">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Igazolványszám</label>
+                <input type="email" class="form-control" id="email" formControlName="IG_Number">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail cím</label>
+                <input type="email" class="form-control" id="email" formControlName="Email">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Jelszó</label>
+                <input type="password" class="form-control" id="password" formControlName="Passwd">
+            </div>
+            
+            <div class="text-center">
+                <button class="btn btn-outline-primary" (click)="Register()">Regisztráció</button>
+            </div>
+        </form>
+    </div>
+</div>

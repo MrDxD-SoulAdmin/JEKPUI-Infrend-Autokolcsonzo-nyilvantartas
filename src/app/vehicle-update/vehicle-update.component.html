@@ -1,0 +1,43 @@
+<div class="row justify-content-md-center">
+    <div class="col-md-6">
+        <form [formGroup]="Newvehicleform">
+            <div class="mb-3">
+                <label for="email" class="form-label">Típus</label>
+                <input type="email" class="form-control" id="Név" formControlName="Tipus">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Gyarto</label>
+                <input type="email" class="form-control" id="email" formControlName="Gyarto">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Rendszam</label>
+                <input type="email" class="form-control" id="email" formControlName="Rendszam">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">AlvazSzam</label>
+                <input type="email" class="form-control" id="email" formControlName="AlvazSzam">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Beszerzes</label>
+                <input type="email" class="form-control" id="email" formControlName="Beszerzes">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Kolcsonzse_Dij</label>
+                <input type="email" class="form-control" id="password" formControlName="Kolcsonzse_Dij">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Futott</label>
+                <input type="email" class="form-control" id="password" formControlName="Futott">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">status</label>
+                <input type="email" class="form-control" id="password" formControlName="status">
+            </div>
+            
+            <div class="text-center">
+                <button class="btn btn-outline-primary" (click)="NewvehicleRegist()">Regisztráció</button>
+            </div>
+        </form>
+    </div>
+</div>
+

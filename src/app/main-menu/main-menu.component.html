@@ -1,0 +1,56 @@
+<form class="box" name="Main" [formGroup]="form" (submit)="Indata()">
+    <h1 class="jumbotron text-center">Járművek Listája</h1>
+    <table class="jumbotron align-center">
+        <th>
+            <tr>
+                <input type="text" formControlName="Shearch_Data" class="form-control glyphicon-search" id="search" placeholder="Keresés">
+            </tr>
+        </th>
+        <th>
+            <tr>
+                <select formControlName="Shearch_By" id="search_list" class="form-control">
+                    <option value="" selected="selected" disabled hidden>Válassz!</option>
+                    <option value="Type">Típus</option>
+                    <option value="Rendszam">Rendszám</option>
+                </select></tr>
+        </th>
+        <th>
+            <tr><button type="submit" class="btn btn-outline-primary">Keresés</button></tr>
+        </th>
+        <th>
+            <tr><button type="submit" class="btn btn-outline-primary" onclick="location.reload()">Frissítés</button></tr>
+        </th>
+
+    </table>
+
+</form>
+<div>
+    <table class="table" class="col-12 mb-1">
+        <thead id="fejlec">
+            <th>Sorszám</th>
+            <th>Típus</th>
+            <th>Gyártó</th>
+            <th>Rendszám</th>
+            <th>Alvázszám</th>
+            <th>Beszerzés Dátuma</th>
+            <th>Futott Kilométer</th>
+            <th>Kölcsönzési Díj(NAP)</th>
+            <th>Kölcsönzési Státusz</th>
+            <th>Selejt</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let asdvehicle of garage">
+                <th>{{asdvehicle.Vehicle_ID}}</th>
+                <th>{{asdvehicle.Tipus}}</th>
+                <th>{{asdvehicle.Gyarto}}</th>
+                <th>{{asdvehicle.Rendszam}}</th>
+                <th>{{asdvehicle.AlvazSzam}}</th>
+                <th>{{asdvehicle.Beszerzes}}</th>
+                <th>{{asdvehicle.Futott}}</th>
+                <th>{{asdvehicle.Kolcsonzse_Dij}}</th>
+                <th>{{asdvehicle.status}}</th>
+                <th *ngIf="asdvehicle.Selejt">{{asdvehicle.Selejt}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>

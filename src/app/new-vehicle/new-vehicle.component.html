@@ -1,0 +1,43 @@
+<div class="row justify-content-md-center">
+    <div class="col-md-6">
+        <form [formGroup]="Newvehicleform">
+            <div class="mb-3">
+                <label for="email" class="form-label">Típus:</label>
+                <input type="email" class="form-control" id="Név" formControlName="Tipus">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Gyartó:</label>
+                <input type="email" class="form-control" id="email" formControlName="Gyarto">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Rendszám:</label>
+                <input type="email" class="form-control" id="email" formControlName="Rendszam">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Alváz Szám:</label>
+                <input type="email" class="form-control" id="email" formControlName="AlvazSzam">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Beszerzés Iőpontja:</label>
+                <input type="email" class="form-control" id="email" formControlName="Beszerzes">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Kölcsönzési Díj (Nap/Ft)</label>
+                <input type="email" class="form-control" id="password" formControlName="Kolcsonzse_Dij">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Futott Kilométer</label>
+                <input type="email" class="form-control" id="password" formControlName="Futott">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Kölcsönzési Státusz</label>
+                <input type="email" class="form-control" id="password" formControlName="status">
+            </div>
+            
+            <div class="text-center">
+                <button class="btn btn-outline-primary" (click)="NewvehicleRegist()">Regisztráció</button>
+                <button class="btn btn-outline-primary" (click)="Selejt()">Selejtezés</button>
+            </div>
+        </form>
+    </div>
+</div>

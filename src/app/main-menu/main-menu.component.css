@@ -1,0 +1,20 @@
+#search{
+    width: 200px;
+    margin-right: 5px;
+}
+#search_list{
+    width: 120px;
+}
+table{
+    margin-top: 10px;
+}
+#fejlec{
+    border-bottom: 2px solid gray;
+}
+h1{
+    color: #f9a71f;
+}
+button,Select,input{
+    border: 2px solid #cf3c28;
+    margin-left: 5px;
+}
