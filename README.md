@@ -1,2 +1,2 @@
 # JEKPUI-Infrend-Autokolcsonzo-nyilvantartas
-Indormatikai
+Informatikai rendszerek építése
